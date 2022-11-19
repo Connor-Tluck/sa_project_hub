@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Carousel Template · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+    </style>
+  </head>
+<body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <image src="images/np_logo_2.png" width="140" height=80%/>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="team.html">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="https://www.nearmap.com/us/en/support">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page"  href="project.html">Projects</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <video src="videos/Seattle_Alaskan_Way_Viaduct_Area_Render.mp4"  autoplay loop muted width="100%"></video>        
+        <div class="carousel-caption">
+          <div class="carousel-caption">
+            <h1>Solution Architecture Hub</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Featured Links</h2>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row"> 
+      <div class="col-lg-4">
+        <image class="circle" src="images/home-outline.svg" width="140" height="140"/>
+
+        <h2 class="fw-normal">Transactional API Web App for Insurance</h2>
+        <p>Web Application for running quick client Demos of Transactional API use cases for Insurance </p>
+        <p><a class="btn btn-primary btn" href="https://quiet-beignet-9f4997.netlify.app/">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <image class="circle" src="images/easel-outline.svg" width="140" height="140"/>
+
+        <h2 class="fw-normal">Nearmap Demo Gallery Web App</h2>
+        <p>Web App to Demo range of Nearmap content integrations and use cases, includes Mesh Viewer Gallery using Three.js</p>
+        <p><a class="btn btn-primary btn" href="https://shimmering-scone-6b2d0f.netlify.app/">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <image class="circle" src="images/logo-github.svg" width="140" height="140"/>
+
+        <h2 class="fw-normal">Nearmap Python SDK</h2>
+        <p>Link to Github Repo to support clients seeking to deploy custom Python Applications. </p>
+        <p><a class="btn btn-primary btn" href="https://github.com/nearmap">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Nearmap Demo Gallery Web App </h2>
+        <p class="lead">html and javascript web app built on three.js, provides access to a variety of integrations including:</p>
+        <ul>
+          <li>Mesh Viewer</li>
+          <li>3D Viewer</li>
+          <li>2D Viewer</li>
+          <li>Openlayers, Mapbox, EsriJs and Cesium Integration Examples</li>
+          <li>Custom Map Framework Builds and Examples</li>
+          <li>Integrated Storymap and Dashboard Hub</li>
+          <li>Video Demo Library</li>
+      </div>
+      <div class="col-md-5">
+        <img src="images/gallery_gltf.gif" alt="Demo Gallery"  width="500" height="300"/>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Nearmap Python SDK</h2>
+        <p class="lead">Comprehensive Python Library which not only wraps python functions around API endpoints but includes examples and many other usefull functions.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <image class="circle" src="images/logo-github.svg" width="500" height="500"/>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Transactional API Web App for Insurance </h2>
+        <p class="lead">Web Application for running quick client Demos of Transactional API use cases for Insurance.</p>
+      </div>
+      <div class="col-md-5">
+        <image class="circle" src="images/insurance_demo.png" width="500"/>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+      
+  </body>
+</html>
