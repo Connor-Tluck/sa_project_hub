@@ -118,6 +118,24 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      #video {
+        display: block;
+      }
+        
+      #image {
+        display: none;
+      }
+
+      @media (max-width: 720px) {
+        #video {
+          display: none;
+        }
+
+        #image {
+          display: block;
+        }
+      }
       
     </style>
   </head>
@@ -159,8 +177,9 @@
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <video src="videos/Seattle_Alaskan_Way_Viaduct_Area_Render.mp4" poster='images/mobile_fixed_header.jpg' autoplay loop muted width="100%"></video>        
-          <div class="carousel-caption">
+        <video id='video' src="videos/Seattle_Alaskan_Way_Viaduct_Area_Render.mp4"  autoplay loop muted width="100%"></video>        
+        <img id="image" src="images/mobile_header_3.png">  
+        <div class="carousel-caption">
           <div class="carousel-caption">
             <h1>Solution Architecture Hub</h1>
             <p></p>
