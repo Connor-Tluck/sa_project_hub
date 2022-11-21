@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <body>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -10,52 +10,239 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">    
     <link href="team.css" rel="stylesheet">
-</head>
-
-
-
-<div class="container text-center mt-5 mb-2">
-    <h1 class="mb-0">Meet our agents</h1><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</span></div>
-<div class="container mt-3">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.imgur.com/uppKNuF.jpg" width="90">
-                <h5 class="mt-3 name">Samuel Plamer</h5><span class="work d-block">Comapay agents house</span><span class="work d-block">real estate</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
-                <div class="mt-4">
-                    <h6 class="v-profile">View Profile</h6>
-                </div>
-            </div>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+  
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+        
+      </style>
+    </head>
+  <body>
+      
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <image src="images/np_logo_2.png" width="140" height=80%/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="team.html">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="https://www.nearmap.com/us/en/support">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"  href="project.html">Projects</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <div class="col-md-3">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.imgur.com/oJmLthK.jpg" width="90">
-                <h5 class="mt-3 name">Nancy Markus</h5><span class="work d-block">Comapay agents house</span><span class="work d-block">real estate</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
-                <div class="mt-4">
-                    <h6 class="v-profile">View Profile</h6>
-                </div>
+      </nav>
+    </header>
+  
+  <main>
+    <hr class="featurette-divider">
+    <div class="py-5 team4">
+        <div class="container">
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-7 text-center">
+              <h3 class="mb-3">Experienced & Professional Team</h3>
+              <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.imgur.com/HFpxxJz.jpg" width="90">
-                <h5 class="mt-3 name">Martha Col</h5><span class="work d-block">Comapay agents house</span><span class="work d-block">real estate</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
-                <div class="mt-4">
-                    <h6 class="v-profile">View Profile</h6>
+          </div>
+          <div class="row">
+            <!-- column  -->
+            <div class="col-lg-4 mb-4">
+              <!-- Row -->
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <img src="images/geoff_taylor_headshot.jpg" alt="wrapkit" class="img-fluid rounded-circle" height="300" width="300"/>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="https://i.imgur.com/MZm1LNz.jpg" width="90">
-                <h5 class="mt-3 name">Marry Jones</h5><span class="work d-block">Comapay agents house</span><span class="work d-block">real estate</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
-                <div class="mt-4">
-                    <h6 class="v-profile">View Profile</h6>
+                <div class="col-md-12 text-center">
+                  <div class="pt-2">
+                    <h5 class="mt-4 font-weight-medium mb-0">Geoff Taylor</h5>
+                    <h6 class="subtitle mb-3">Manager Solution Architecture</h6>
+                    <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://github.com/geoffhtaylor3d" class="text-decoration-none d-block px-1"><i class="icon-social-github"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/geoffhtaylor/" class="text-decoration-none d-block px-1"><i class="icon-social-linkedin"></i></a></li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              <!-- Row -->
             </div>
+            <!-- column  -->
+            <!-- column  -->
+            <div class="col-lg-4 mb-4">
+              <!-- Row -->
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <img src="images/connor_tluck_headshot.jpg" alt="wrapkit" class="img-fluid rounded-circle" height="300" width="300" />
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="pt-2">
+                    <h5 class="mt-4 font-weight-medium mb-0">Connor Tluck</h5>
+                    <h6 class="subtitle mb-3">Solution Architecture</h6>
+                    <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://github.com/Connor-Tluck" class="text-decoration-none d-block px-1"><i class="icon-social-github"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/connor-tluck/" class="text-decoration-none d-block px-1"><i class="icon-social-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Row -->
+            </div>
+            <!-- column  -->
+            <!-- column  -->
+            <div class="col-lg-4 mb-4">
+              <!-- Row -->
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <img src="images/ian_thomas_headshot.jpg" alt="wrapkit" class="img-fluid rounded-circle" height="300" width="300" />
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="pt-2">
+                    <h5 class="mt-4 font-weight-medium mb-0">Ian Thomas</h5>
+                    <h6 class="subtitle mb-3">Solution Architecture, Junior</h6>
+                    <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://github.com/iankthomas" class="text-decoration-none d-block px-1"><i class="icon-social-github"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/ian-thomas-aws21/" class="text-decoration-none d-block px-1"><i class="icon-social-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Row -->
+            </div>
+            <!--  -->
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+  
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+  
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+  
+      
+  </html>
+  
