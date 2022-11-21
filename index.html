@@ -12,6 +12,9 @@
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+
+ 
 
     <style>
       .bd-placeholder-img {
@@ -155,10 +158,27 @@
 
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-
       <div class="carousel-item active">
-        <video src="videos/Seattle_Alaskan_Way_Viaduct_Area_Render.mp4"  autoplay loop muted width="100%"></video>        
-        <div class="carousel-caption">
+        <video class="video-js vjs-default-skin vjs-16-9"
+          id="my-video"
+          class="video-js"
+          autoplay="true"
+          loop="true"
+          controls="false"
+          preload="auto"
+          poster="MY_VIDEO_POSTER.jpg"
+          data-setup="{}"
+        >
+          <source src="videos/Seattle_Alaskan_Way_Viaduct_Area_Render.mp4" type="video/mp4" />
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+          <div class="carousel-caption">
           <div class="carousel-caption">
             <h1>Solution Architecture Hub</h1>
             <p></p>
